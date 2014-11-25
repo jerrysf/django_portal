@@ -1,0 +1,19 @@
+<head>
+
+    <script type ="text/javascript" src ="/static/polls/scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/static/polls/scripts/highcharts.js"></script>
+  
+    {% load chartit %}
+    {{ charts|load_charts:"cht" }}
+
+</head>
+
+
+<body>
+    <h1> Charts </h1> 
+    <a href="{% url 'index' %}">Home</a> 
+    </br>
+    <a href="{% url 'chart' %}">Back to Chart Selection Page</a>
+    
+    <div id='cht'></div>
+</body>
